@@ -2,7 +2,7 @@
   <div class="bg-color-primary px-sm parent">
     <FAppBar v-if="!isMobile" class="appbar appbar-desktop">
       <template #navigation>
-        <img src="/FARI-logo.svg" class="logo" alt="FARI Logo" @click="$router.push('/')">
+        <img src="/Fari-logo.svg" class="logo" alt="FARI Logo" @click="$router.push('/')">
         <AppBarTabsDesktop :tabs="tabs"/>
       </template>
       <template #actions>
