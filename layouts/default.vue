@@ -11,7 +11,7 @@
     </FAppBar>
     <FAppBar v-else class="appbar">
       <template #navigation>
-        <img src="/FARI-logo.svg" class="logo" alt="FARI Logo" @click="$router.push('/')">
+        <img src="/Fari-logo.svg" class="logo" alt="FARI Logo" @click="$router.push('/')">
       </template>
       <template #actions>
         <FButtonIcon
