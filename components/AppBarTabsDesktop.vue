@@ -1,15 +1,15 @@
 <template>
   <div
+    ref="tabListRef"
     role="tablist"
     class="wrapper"
     aria-label="Navigation Tabs"
-    ref="tabListRef"
   >
     <div class="tab-indicator" :style="indicatorStyle"/>
     <button
       v-for="{ value, label } in tabs"
-      :key="value"
       :ref="el => tabRefs.set(value, el)"
+      :key="value"
       :class="{
         'rounded-s': true,
         tab: true,
@@ -77,7 +77,7 @@ onMounted(() => {
 
 <style scoped lang="scss">
 .wrapper {
-  height: 100%;
+  height: 4rem;
   width: fit-content;
   display: flex;
   justify-content: space-evenly;
@@ -105,8 +105,8 @@ onMounted(() => {
 
 .tab-indicator {
   position: absolute;
-  bottom: 0;
-  height: 100%;
+  bottom: 25%;
+  height: 2rem;
   background-color: #4a8fcd80;
   border-radius: 0.3rem;
   transition:

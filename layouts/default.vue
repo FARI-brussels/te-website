@@ -58,9 +58,9 @@ const tabs = computed(() => {
             },
             { 
               label: {
-                fr: 'Caverne',
-                en: 'Cave',
-                nl: 'Grot',
+                fr: 'CAVE',
+                en: 'CAVE',
+                nl: 'CAVE',
               }, 
               value: '/cave' 
             },
@@ -94,7 +94,7 @@ justify-content: center;
   padding-top: 1rem;
 }
 .logo {
-  width: 100px;
+  width: 10rem;
   height: auto;
   margin-left: 20px;
 }
